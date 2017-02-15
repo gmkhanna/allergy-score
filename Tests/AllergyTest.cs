@@ -21,10 +21,10 @@ namespace Allergy
     [Fact]
     public void Test2_EggAllergy_Eggs()
     {
-      int inputEggs = 3;
+      int inputEggs = 2;
       Allergy testEggs = new Allergy(inputEggs);
       List<string> result = testEggs.Score();
-      List<string> originList = new List<string> {"Peanuts", "Eggs"};
+      List<string> originList = new List<string> {"Peanuts"};
 
       Assert.Equal(originList, result);
     }
