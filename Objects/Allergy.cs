@@ -22,6 +22,36 @@ namespace Allergy
       }
       else
       {
+        if (_score >= 128)
+        {
+          _score -=128;
+          _allergyList.Add("Cats");
+        }
+        if (_score >= 64)
+        {
+          _score -=64;
+          _allergyList.Add("Pollen");
+        }
+        if(_score >= 32)
+        {
+          _score -=32;
+          _allergyList.Add("Chocolate");
+        }
+        if (_score >= 16)
+        {
+          _score -=16;
+          _allergyList.Add("Tomatoes");
+        }
+        if (_score >= 8)
+        {
+          _score -=8;
+          _allergyList.Add("Strawberries");
+        }
+        if(_score >= 4)
+        {
+          _score -=4;
+          _allergyList.Add("Shellfish");
+        }
         if (_score >= 2)
         {
           _score -=2;
@@ -29,7 +59,7 @@ namespace Allergy
         }
         if(_score >= 1)
         {
-          _score -=1; 
+          _score -=1;
           _allergyList.Add("Eggs");
         }
       }

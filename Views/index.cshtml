@@ -1,0 +1,36 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+<div class="jumbotron">
+  <h2>Allergies - ACHHOO!!</h2>
+</div>
+
+<h2>Hey you. Sneeze Out Your Allergy Number Here</h2>
+
+<div class="row">
+
+  <div class="form">
+
+    <form action="/" method="post">
+      <div class="col-md-10">
+        <label for="number">Type a number <= 255.</label>
+        <input id="number" type="text" name="number">
+      </div>
+
+      <div class="col-md-2">
+
+        <button type="submit" name="button">Sniffle Sniffle</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+@if (@Model != null)
+{
+  @foreach (string allergy in @Model)
+  {
+    <p>@allergy</p>
+  }
+
+}
